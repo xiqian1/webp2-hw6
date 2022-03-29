@@ -47,15 +47,22 @@ function draw(){
         .then((drawjson) => {
             console.log(drawjson);
             let cards=drawjson.cards[0];
-            if(scoreholder2<=15){
+            if(scoreholder2<=15 && hold===0){
                 createImage2(cards);
                 scoreline2(cards);
             }
             
+            if(scoreholder2<=scoreholder && hold===1){
+                createImage2(cards);
+                scoreline2(cards);
+                afterhold();
+            }
+
             if(scoreholder2>=16 && hold===0){
                 message.innerHTML="Dealer Holds";
             }
             conditions();
+            
             if(scoreholder2>=16 && scoreholder2<21 && hold===1){
                 afterhold();
             }
