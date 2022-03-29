@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-image: url("table.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: hidden;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 20px;
+}
+
+.top-mid{
+    height: 200px;
+    align-items: center;
+}
+.mid-mid{
+    height: 125px;
+}
+.message{
+    transform: translateY(50%);
+    padding: 5px 0;
+    font-family: Courier, 'Courier New', monospace;
+}
+.bot-mid{
+    height: 225px;
+    align-items: center;
+}
+
+.scoreboard{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bot{
+    height: 30px;
+}
+
+.getcard{
+    margin: 10%;
+    background-color:#84f14e;
+    display:inline-block;
+    padding:0.3em 1.4em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    font-family:'Roboto',sans-serif;
+    color:black;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+.getcard:hover{
+    border-color: black;
+}
+
+.hold{
+    background-color:#f14e4e;
+    display:inline-block;
+    padding:0.3em 1.4em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    font-family:'Roboto',sans-serif;
+    color:black;
+    text-align:center;
+    transition: all 0.2s;
+}
+.hold:hover{
+    border-color: black;
+}
+
+.playagain{
+    visibility: hidden;
+    background-color:#19B4F4;
+    display:inline-block;
+    padding:0.3em 1.4em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    font-family:'Roboto',sans-serif;
+    color:black;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+.playagain:hover{
+    border-color: black;
+}
