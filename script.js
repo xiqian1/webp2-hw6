@@ -81,6 +81,7 @@ function createImage(data){
     nextcard.setAttribute("src",data.image);
     nextcard.style.height="200px";
     card.appendChild(nextcard);
+    card.style.userSelect="none";
 }
 
 let card2=document.querySelector(".card2");
@@ -89,6 +90,7 @@ function createImage2(data){
     nextcard.setAttribute("src",data.image);
     nextcard.style.height="200px";
     card2.appendChild(nextcard);
+    card2.style.userSelect="none";
 }
 
 let score=document.querySelector(".scorekeep");
