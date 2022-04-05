@@ -79,6 +79,7 @@ let card=document.querySelector(".card");
 function createImage(data){
     let nextcard=document.createElement("img");
     nextcard.setAttribute("src",data.image);
+    nextcard.setAttribute("draggable",false);
     nextcard.style.height="200px";
     card.appendChild(nextcard);
     card.style.userSelect="none";
@@ -88,6 +89,7 @@ let card2=document.querySelector(".card2");
 function createImage2(data){
     let nextcard=document.createElement("img");
     nextcard.setAttribute("src",data.image);
+    nextcard.setAttribute("draggable",false);
     nextcard.style.height="200px";
     card2.appendChild(nextcard);
     card2.style.userSelect="none";
