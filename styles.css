@@ -8,7 +8,9 @@ body {
     font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 20px;
 }
-
+.dealerboard{
+    user-select: none;
+}
 .top-mid{
     height: 200px;
     align-items: center;
@@ -20,6 +22,7 @@ body {
     transform: translateY(50%);
     padding: 5px 0;
     font-family: Courier, 'Courier New', monospace;
+    user-select: none;
 }
 .bot-mid{
     height: 225px;
@@ -31,6 +34,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    user-select: none;
 }
 
 .bot{
@@ -49,6 +53,7 @@ body {
     color:black;
     text-align:center;
     transition: all 0.2s;
+    user-select: none;
 }
 
 @keyframes slide {
@@ -70,6 +75,7 @@ body {
     color:black;
     text-align:center;
     transition: all 0.2s;
+    user-select: none;
 }
 .hold:hover{
     border-color: black;
